@@ -44,7 +44,7 @@ const Sidebar = ({ usersRooms, openChat, fetchProfile, cableApp }) => {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("submited");
-    fetch("http://localhost:3000/rooms", {
+    fetch("https://glacial-beyond-60884.herokuapp.com/rooms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -12,7 +12,7 @@ function UserMenu() {
     const [addMemberToggle, setAddMemberToggle] = useState(false);
     const [textField, setTextField] = useState('');
     function handleDelete(){
-      fetch('http://localhost:3000/leave',{
+      fetch('https://glacial-beyond-60884.herokuapp.com/leave',{
         method:'POST',
         headers: {
           'Content-Type':'application/json',
@@ -37,7 +37,7 @@ function UserMenu() {
     function handleSubmit(e){
       e.preventDefault();
       handleClick();
-      fetch("http://localhost:3000/chats", {
+      fetch("https://glacial-beyond-60884.herokuapp.com/chats", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

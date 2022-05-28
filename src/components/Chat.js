@@ -118,7 +118,7 @@ const Chat = ({ cableApp, usersRooms, openChat }) => {
       sender_name: currentUser.username
     };
     console.log("message", message);
-    fetch("http://localhost:3000/messages", {
+    fetch("https://glacial-beyond-60884.herokuapp.com/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

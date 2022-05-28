@@ -28,7 +28,7 @@ function SignupForm({ setShowLogin, showLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
     if (password === password_confirmation) {
-      fetch("http://localhost:3000/users", {
+      fetch("https://glacial-beyond-60884.herokuapp.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -7,7 +7,7 @@ function ChatWebSocket({ cableApp }) {
   const currentUser = useSelector((state) => state.user.value);
   const location = useLocation();
   const getRoomData = (id) => {
-    fetch(`http://localhost:3000/rooms/${id}`)
+    fetch(`https://glacial-beyond-60884.herokuapp.com/rooms/${id}`)
       .then((response) => response.json())
       .then((result) => {
         dispatch(

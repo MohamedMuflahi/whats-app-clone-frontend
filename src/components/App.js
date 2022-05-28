@@ -15,7 +15,7 @@ function App({ cableApp }) {
   const dispatch = useDispatch();
   let token = localStorage.getItem("jwt_token");
   function fetchProfile() {
-    fetch("http://localhost:3000/profile", {
+    fetch("https://glacial-beyond-60884.herokuapp.com/profile", {
       headers: { Authentication: `Bearer ${token}` },
     })
       .then((response) => response.json())
@@ -52,7 +52,7 @@ function ChatScreen({ cableApp }) {
 
   const dispatch = useDispatch();
   function fetchProfile() {
-    fetch("http://localhost:3000/profile", {
+    fetch("https://glacial-beyond-60884.herokuapp.com/profile", {
       headers: { Authentication: `Bearer ${token}` },
     })
       .then((response) => response.json())

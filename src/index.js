@@ -12,7 +12,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 const CableApp = {};
 
-CableApp.cable = actionCable.createConsumer("ws://localhost:3000/cable");
+CableApp.cable = actionCable.createConsumer("wss://glacial-beyond-60884.herokuapp.com/cable");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
